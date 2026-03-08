@@ -1,0 +1,25 @@
+name: Salesforce PR Validation
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'force-app/**'
+
+jobs:
+  validate-deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Install Salesforce CLI
+        run: npm install @salesforce/cli --global
+
+      - name: Authenticate to Salesforce Org
+        # Assumes SFDX_AUTH_URL is saved as a Repository Secret
+        run: echo "${{ secrets.SFDX_AUTH_URL }}" > sfdx_auth.txt && sf org login sfdx-url -f sfdx_auth.txt -a CI_ORG
+
+      - name: Run Validation Deployment
+        run: sf project deploy start --target-org CI_ORG --source-dir force-app --test-level RunLocalTests --dry-run
