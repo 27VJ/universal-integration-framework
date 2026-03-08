@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Array_Object_Type__c</fullName>
+    <label>Array Object Type</label>
+    <type>Text</type>
+    <length>255</length>
+    <required>false</required>
+    <description>Inbound only: SObject API name for array-element records (e.g., News_Article__c)</description>
+</CustomField>

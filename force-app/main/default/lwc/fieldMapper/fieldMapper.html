@@ -1,0 +1,201 @@
+<template>
+    <div class="mapper-container">
+        <!-- Header Actions -->
+        <div class="mapper-header">
+            <h2>Mappings for: {configName}</h2>
+            <div class="header-actions">
+                <button class="btn btn-secondary" onclick={handleBack}>Cancel</button>
+                <button class="btn btn-primary" onclick={handleNewMapping}>+ New Mapping</button>
+            </div>
+        </div>
+
+        <!-- LIST VIEW -->
+        <template if:true={isListView}>
+            <template if:true={isEmptyState}>
+                <div class="empty-state">No mappings defined yet.</div>
+            </template>
+            <template if:false={isEmptyState}>
+                <div class="table-card">
+                    <table class="custom-data-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Source Field</th>
+                                <th>Target Field</th>
+                                <th>Type</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={mappings} for:item="m">
+                                <tr key={m.id}>
+                                    <td>{m.name}</td>
+                                    <td>{m.sourceField}</td>
+                                    <td>{m.targetField}</td>
+                                    <td>
+                                        <span class="badge badge-type">{m.mappingType}</span>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-outline btn-sm" data-id={m.id} onclick={handleEditMapping}>Edit</button>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </template>
+        </template>
+
+        <!-- FORM MODAL -->
+        <template if:true={isFormView}>
+            <div class="modal-backdrop">
+                <div class="modal-container">
+                    <div class="modal-header">
+                        <h2>{formTitle}</h2>
+                        <button class="close-btn" onclick={handleCancelMapping}>&times;</button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <div class="form-row">
+                            <div class="form-group flex-1">
+                                <label class="form-label"><abbr class="slds-required">*</abbr> Mapping Name</label>
+                                <input type="text" class="custom-input" name="developerName" value={draftMapping.developerName} onchange={handleMappingChange} disabled={isEditMode} placeholder="e.g. Map_Account_Name" />
+                            </div>
+                            <div class="form-group flex-1">
+                                <label class="form-label">Data Type</label>
+                                <select class="custom-input type-combobox" name="dataType" onchange={handleMappingChange}>
+                                    <template for:each={dataTypeOptions} for:item="opt">
+                                        <option key={opt.value} value={opt.value} selected={opt.selected}>{opt.label}</option>
+                                    </template>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Custom Cascading Source Field Picker -->
+                        <div class="form-group sf-field-picker-container" onmousedown={handleInnerClick}>
+                            <label class="form-label"><abbr class="slds-required">*</abbr> Source Field (Salesforce)</label>
+                            
+                            <template if:false={isSfFieldPickerOpen}>
+                                <button type="button" class="field-picker-trigger" onclick={toggleSfFieldPicker}>
+                                    <span class={sfFieldDisplayClass}>{sfFieldDisplayValue}</span>
+                                    <span class="field-picker-arrow">▾</span>
+                                </button>
+                            </template>
+
+                            <template if:true={isSfFieldPickerOpen}>
+                                <div class="field-picker-input-wrap">
+                                    <input type="text" class="field-picker-inline-input" placeholder="Search Salesforce Fields..." value={sfFieldSearchTerm} onkeyup={handleSfFieldSearch} />
+                                </div>
+
+                                <div class="field-picker-dropdown" style={dropdownStyle}>
+                                    <ul class="field-picker-list">
+                                        <template for:each={enrichedSfFieldOptions} for:item="opt">
+                                            <!-- Standard Field Row -->
+                                            <li key={opt.value} class="field-picker-item-row" data-value={opt.value} onclick={handleSfFieldSelect}>
+                                                <div class="item-main-content">
+                                                    <div class="item-left">
+                                                        <span class="field-picker-item-label">{opt.label}</span>
+                                                        <span class="field-picker-item-type">{opt.type}</span>
+                                                    </div>
+                                                    <!-- Expand Arrow if reference -->
+                                                    <template if:true={opt.isReference}>
+                                                        <span class="reference-icon" data-value={opt.value} onclick={handleExpandFlyout}>›</span>
+                                                    </template>
+                                                </div>
+                                            </li>
+
+                                            <!-- Cross-Object Flyout Menu -->
+                                            <template if:true={opt.isExpanded}>
+                                                <div key={opt.value} class="field-picker-flyout" style={flyoutStyle} onclick={stopPropagation}>
+                                                    <div class="flyout-header">
+                                                        <button class="flyout-back-btn" data-value={opt.value} onclick={handleFlyoutBack}>‹ Back</button>
+                                                        <span class="flyout-title">{opt.targetObjectLabel}</span>
+                                                    </div>
+                                                    
+                                                    <template if:true={opt.isLoadingTarget}>
+                                                        <div class="flyout-loading">Loading fields...</div>
+                                                    </template>
+
+                                                    <template if:false={opt.isLoadingTarget}>
+                                                        <ul class="flyout-list">
+                                                            <template for:each={opt.targetFields} for:item="rField">
+                                                                <li key={rField.value} class="flyout-item" data-value={rField.value} onclick={handleTargetFieldSelect}>
+                                                                    {rField.label}
+                                                                </li>
+                                                            </template>
+                                                        </ul>
+                                                    </template>
+                                                </div>
+                                            </template>
+                                        </template>
+                                    </ul>
+                                </div>
+                            </template>
+                        </div>
+
+                        <!-- Mapping Type Toggle -->
+                        <div class="form-group toggle-group">
+                            <label class="form-label">Mapping Type</label>
+                            <div class="toggle-tabs">
+                                <button class={scalarTabClass} data-type="scalar" onclick={handleMappingTypeToggle}>Scalar</button>
+                                <button class={arrayTabClass} data-type="array" onclick={handleMappingTypeToggle}>Array Mapping</button>
+                            </div>
+                        </div>
+
+                        <template if:true={isArrayMapping}>
+                            <div class="form-group hint-box">
+                                <p><strong>Array Mapping Info:</strong> Ensure the target field path includes the <code>[*]</code> token.</p>
+                                <p>Outbound Example: <code>articles[*].title</code></p>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group flex-1">
+                                    <label class="form-label">Child Relationship Name (Outbound / Arrays)</label>
+                                    <input type="text" class="custom-input" name="childRelName" value={draftMapping.childRelName} onchange={handleMappingChange} placeholder="e.g. Contacts" />
+                                </div>
+                                <div class="form-group flex-1">
+                                    <label class="form-label">Array Object Type (Inbound Creation)</label>
+                                    <input type="text" class="custom-input" name="arrayObjType" value={draftMapping.arrayObjType} onchange={handleMappingChange} placeholder="e.g. Contact" />
+                                </div>
+                            </div>
+                        </template>
+
+                        <div class="form-group">
+                            <label class="form-label"><abbr class="slds-required">*</abbr> Target Field (JSON Path)</label>
+                            <input type="text" class="custom-input" name="targetField" value={draftMapping.targetField} onchange={handleMappingChange} placeholder="e.g. Address.City or contacts[*].email" />
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group flex-1">
+                                <label class="form-label">Transform Rule</label>
+                                <select class="custom-input type-combobox" name="transformRule" onchange={handleMappingChange}>
+                                    <option value="">None</option>
+                                    <template for:each={transformOptions} for:item="opt">
+                                        <option key={opt.value} value={opt.value} selected={opt.selected}>{opt.label}</option>
+                                    </template>
+                                </select>
+                            </div>
+                            <div class="form-group flex-1">
+                                <label class="form-label">Default Value</label>
+                                <input type="text" class="custom-input" name="defaultValue" value={draftMapping.defaultValue} onchange={handleMappingChange} placeholder="Fallback value" />
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" onclick={handleCancelMapping}>Cancel</button>
+                        <button class="btn btn-primary" onclick={handleSaveMapping}>Save Mapping</button>
+                    </div>
+                </div>
+            </div>
+        </template>
+        
+        <!-- Spinner Overlay -->
+        <template if:true={isLoading}>
+            <div class="spinner-overlay">
+                <div class="custom-circle-loader"></div>
+            </div>
+        </template>
+    </div>
+</template>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transform_Rule__c</fullName>
+    <label>Transform Rule</label>
+    <type>Text</type>
+    <length>255</length>
+    <required>false</required>
+    <description>Lookup key to Integration_Transform__mdt DeveloperName</description>
+</CustomField>

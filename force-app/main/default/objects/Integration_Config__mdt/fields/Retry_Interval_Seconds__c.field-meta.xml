@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Retry_Interval_Seconds__c</fullName>
+    <label>Retry Interval (Seconds)</label>
+    <type>Number</type>
+    <precision>5</precision>
+    <scale>0</scale>
+    <required>false</required>
+    <defaultValue>60</defaultValue>
+    <description>Base interval in seconds between retries (exponential backoff applied)</description>
+</CustomField>

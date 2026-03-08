@@ -1,0 +1,156 @@
+<template>
+    <div class="app-container">
+        <!-- Persistent Header -->
+        <header class="app-header">
+            <h1 class="header-title">Universal Integration Framework</h1>
+        </header>
+
+        <main class="app-main">
+            <!-- Global Actions -->
+            <div class="global-actions">
+                <template if:true={showBackButton}>
+                    <button class="btn btn-secondary btn-icon" onclick={handleBack}>
+                        <lightning-icon icon-name="utility:back" size="x-small"></lightning-icon> Back
+                    </button>
+                </template>
+                <template if:true={showNewButton}>
+                    <button class="btn btn-primary btn-icon" onclick={handleNew}>
+                        <span class="plus-icon">+</span> New Config
+                    </button>
+                </template>
+            </div>
+
+            <!-- VIEW 1: Main List View -->
+            <template if:true={isViewList}>
+                <template if:true={isEmptyState}>
+                    <div class="empty-state-wrapper">
+                        <div class="empty-state-card">
+                            <h2 class="empty-state-text">No Integration Configs Found.</h2>
+                        </div>
+                    </div>
+                </template>
+                <template if:false={isEmptyState}>
+                    <div class="list-view-wrapper">
+                        <div class="table-card">
+                            <table class="custom-data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Config Name</th>
+                                        <th>Source Object</th>
+                                        <th>External System</th>
+                                        <th>Direction</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <template for:each={configurations} for:item="config">
+                                        <tr key={config.id}>
+                                            <td>{config.developerName}</td>
+                                            <td>{config.sourceObject}</td>
+                                            <td>{config.externalSystem}</td>
+                                            <td>{config.direction}</td>
+                                            <td class={config.statusClass}>{config.status}</td>
+                                            <td class="action-cell">
+                                                <button class="btn btn-primary btn-sm" data-id={config.id} onclick={handleViewMappings}>Mappings</button>
+                                                <button class="btn btn-outline btn-sm" data-id={config.id} onclick={handleEditConfig}>Edit</button>
+                                            </td>
+                                        </tr>
+                                    </template>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </template>
+            </template>
+
+            <!-- VIEW 2: Config Modal / Form -->
+            <template if:true={isViewForm}>
+                <div class="form-wrapper">
+                    <div class="form-card">
+                        <h2 class="form-title">{formTitle}</h2>
+                        
+                        <div class="form-group">
+                            <label class="form-label"><abbr class="slds-required">*</abbr> Developer Name</label>
+                            <input type="text" class="custom-input" name="developerName" value={draftConfig.developerName} onchange={handleConfigChange} required disabled={isEditMode} placeholder="e.g. QB_Account_Sync" />
+                        </div>
+
+                        <!-- SF Object Field Picker -->
+                        <div class="form-group sf-field-picker-container">
+                            <label class="form-label"><abbr class="slds-required">*</abbr> Source Object</label>
+                            <div class="field-picker" onmousedown={handleInnerClick}>
+                                <template if:false={isSfObjectPickerOpen}>
+                                    <button type="button" class="field-picker-trigger" onclick={toggleSfObjectPicker}>
+                                        <span class={sfObjectDisplayClass}>{sfObjectDisplayValue}</span>
+                                        <span class="field-picker-arrow">▾</span>
+                                    </button>
+                                </template>
+                                <template if:true={isSfObjectPickerOpen}>
+                                    <div class="field-picker-input-wrap">
+                                        <input type="text" class="field-picker-inline-input" placeholder="Search..." value={pickerSearchTerm} onkeyup={handlePickerSearch} />
+                                    </div>
+                                    <div class="field-picker-dropdown generic-picker-dropdown">
+                                        <ul class="field-picker-list">
+                                            <template for:each={filteredSfObjectOptions} for:item="opt">
+                                                <li key={opt.value} class="field-picker-item-row" data-value={opt.value} onclick={handleSfObjectSelect}>
+                                                    <span class="field-picker-item-label">{opt.label}</span>
+                                                </li>
+                                            </template>
+                                        </ul>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label"><abbr class="slds-required">*</abbr> External System</label>
+                            <input type="text" class="custom-input" name="externalSystem" value={draftConfig.externalSystem} onchange={handleConfigChange} required />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label"><abbr class="slds-required">*</abbr> Direction</label>
+                            <select class="custom-input type-combobox" name="direction" onchange={handleConfigChange}>
+                                <option value="Outbound" selected={isOutbound}>Outbound</option>
+                                <option value="Inbound" selected={isInbound}>Inbound</option>
+                                <option value="Both" selected={isBoth}>Both</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Auth Config</label>
+                            <select class="custom-input type-combobox" name="authConfig" onchange={handleConfigChange}>
+                                <option value="">Select Auth (Optional)</option>
+                                <template for:each={authOptions} for:item="opt">
+                                    <option key={opt.value} value={opt.value} selected={opt.selected}>{opt.label}</option>
+                                </template>
+                            </select>
+                        </div>
+
+                        <div class="form-group checkbox-wrapper">
+                            <lightning-input type="checkbox" label="Is Active" name="isActive" checked={draftConfig.isActive} onchange={handleConfigChange}></lightning-input>
+                        </div>
+
+                        <div class="form-actions">
+                            <button class="btn btn-outline" onclick={handleCancelConfig}>Cancel</button>
+                            <button class="btn btn-primary" onclick={handleSaveConfig}>Save (Deploy)</button>
+                        </div>
+                    </div>
+                </div>
+            </template>
+            
+            <!-- VIEW 3: Field Mapper Component (shows when mappings clicked) -->
+            <template if:true={isViewMappings}>
+                <!-- Pass context and data to child fieldMapper LWC -->
+                <c-field-mapper config-name={selectedConfigName} object-name={selectedSourceObject} onback={handleBack}></c-field-mapper>
+            </template>
+
+        </main>
+        
+        <!-- Spinner -->
+        <template if:true={isLoading}>
+            <div class="spinner-overlay">
+                <div class="custom-circle-loader"></div>
+            </div>
+        </template>
+    </div>
+</template>

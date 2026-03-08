@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Id_Field__c</fullName>
+    <label>Client Id Field</label>
+    <type>Text</type>
+    <length>255</length>
+    <required>false</required>
+    <description>Custom Setting or protected field reference for client ID</description>
+</CustomField>
