@@ -105,9 +105,9 @@ export default class FieldMapper extends LightningElement {
         if (this.isSfFieldPickerOpen) {
             this.sfFieldSearchTerm = '';
             this.syncEnrichedOptions();
-            // Position
+            // Position securely overriding modal scroll stacking
             const rect = e.currentTarget.getBoundingClientRect();
-            this.dropdownStyle = `top: ${rect.bottom + 4}px; left: ${rect.left}px; width: ${rect.width}px;`;
+            this.dropdownStyle = `top: ${rect.bottom + 4}px; left: ${rect.left}px; width: ${rect.width}px; position: fixed;`;
         }
     }
 
