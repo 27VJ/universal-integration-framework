@@ -1,0 +1,1975 @@
+{
+  "status": 0,
+  "result": {
+    "checkOnly": true,
+    "completedDate": "2026-03-15T08:25:24.000Z",
+    "createdBy": "005dL00001iLNkX",
+    "createdByName": "Vishesh Jain",
+    "createdDate": "2026-03-15T08:24:59.000Z",
+    "details": {
+      "componentSuccesses": [
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/GL_Account__c.object",
+          "fullName": "GL_Account__c.Account_SubType__c",
+          "id": "00NdL00001yfeMqUAI",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/GL_Account__c.object",
+          "fullName": "GL_Account__c.Account_Type__c",
+          "id": "00NdL00001yfeMrUAI",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/GL_Account__c.object",
+          "fullName": "GL_Account__c.Is_Available_For_QB_Sync__c",
+          "id": "00NdL00001yfeMsUAI",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/GL_Account__c.object",
+          "fullName": "GL_Account__c.QBO_SyncToken__c",
+          "id": "00NdL00001yfeMtUAI",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/GL_Account__c.object",
+          "fullName": "GL_Account__c.QB_Error_Message__c",
+          "id": "00NdL00001yfeMuUAI",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/GL_Account__c.object",
+          "fullName": "GL_Account__c.QB_Id__c",
+          "id": "00NdL00001yfeMvUAI",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/GL_Account__c.object",
+          "fullName": "GL_Account__c.QB_Sync_Status__c",
+          "id": "00NdL00001yfeMwUAI",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Auth__mdt.object",
+          "fullName": "Integration_Auth__mdt.Auth_Header_Name__c",
+          "id": "00NdL00001xR71JUAS",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Auth__mdt.object",
+          "fullName": "Integration_Auth__mdt.Auth_Type__c",
+          "id": "00NdL00001xR71KUAS",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Auth__mdt.object",
+          "fullName": "Integration_Auth__mdt.Client_Id_Field__c",
+          "id": "00NdL00001xR71LUAS",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Auth__mdt.object",
+          "fullName": "Integration_Auth__mdt.Client_Secret_Field__c",
+          "id": "00NdL00001xR71MUAS",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Auth__mdt.object",
+          "fullName": "Integration_Auth__mdt.Named_Credential__c",
+          "id": "00NdL00001xR71NUAS",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Auth__mdt.object",
+          "fullName": "Integration_Auth__mdt.Scope__c",
+          "id": "00NdL00001xR71OUAS",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Auth__mdt.object",
+          "fullName": "Integration_Auth__mdt.Token_Cache_Seconds__c",
+          "id": "00NdL00001xR71PUAS",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Auth__mdt.object",
+          "fullName": "Integration_Auth__mdt.Token_Endpoint__c",
+          "id": "00NdL00001xR71QUAS",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Config__mdt.object",
+          "fullName": "Integration_Config__mdt.Auth_Config__c",
+          "id": "00NdL00001xR71RUAS",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Config__mdt.object",
+          "fullName": "Integration_Config__mdt.Batch_Size__c",
+          "id": "00NdL00001xR71SUAS",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Config__mdt.object",
+          "fullName": "Integration_Config__mdt.Description__c",
+          "id": "00NdL00001xR71TUAS",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Config__mdt.object",
+          "fullName": "Integration_Config__mdt.Direction__c",
+          "id": "00NdL00001xR71UUAS",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Config__mdt.object",
+          "fullName": "Integration_Config__mdt.Endpoint__c",
+          "id": "00NdL00001xR71VUAS",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Config__mdt.object",
+          "fullName": "Integration_Config__mdt.Execution_Type__c",
+          "id": "00NdL00001xR71WUAS",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Config__mdt.object",
+          "fullName": "Integration_Config__mdt.External_System__c",
+          "id": "00NdL00001xR71XUAS",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Config__mdt.object",
+          "fullName": "Integration_Config__mdt.Is_Active__c",
+          "id": "00NdL00001xR71YUAS",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Config__mdt.object",
+          "fullName": "Integration_Config__mdt.Max_Retries__c",
+          "id": "00NdL00001xR71ZUAS",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Config__mdt.object",
+          "fullName": "Integration_Config__mdt.Retry_Interval_Seconds__c",
+          "id": "00NdL00001xR71aUAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Config__mdt.object",
+          "fullName": "Integration_Config__mdt.Source_Object__c",
+          "id": "00NdL00001xR71bUAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Config__mdt.object",
+          "fullName": "Integration_Config__mdt.Timeout__c",
+          "id": "00NdL00001xR71cUAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Endpoint__mdt.object",
+          "fullName": "Integration_Endpoint__mdt.Base_URL__c",
+          "id": "00NdL00001xR71dUAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Endpoint__mdt.object",
+          "fullName": "Integration_Endpoint__mdt.Content_Type__c",
+          "id": "00NdL00001xR71eUAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Endpoint__mdt.object",
+          "fullName": "Integration_Endpoint__mdt.Custom_Headers__c",
+          "id": "00NdL00001xR71fUAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Endpoint__mdt.object",
+          "fullName": "Integration_Endpoint__mdt.HTTP_Method__c",
+          "id": "00NdL00001xR71gUAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Endpoint__mdt.object",
+          "fullName": "Integration_Endpoint__mdt.Named_Credential__c",
+          "id": "00NdL00001xR71hUAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Endpoint__mdt.object",
+          "fullName": "Integration_Endpoint__mdt.Path__c",
+          "id": "00NdL00001xR71iUAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Endpoint__mdt.object",
+          "fullName": "Integration_Endpoint__mdt.Query_Parameters__c",
+          "id": "00NdL00001xR71jUAC",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Event__e.object",
+          "fullName": "Integration_Event__e.Action__c",
+          "id": "00NdL00001xR71kUAC",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Event__e.object",
+          "fullName": "Integration_Event__e.Config_Name__c",
+          "id": "00NdL00001xR71lUAC",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Event__e.object",
+          "fullName": "Integration_Event__e.Record_Id__c",
+          "id": "00NdL00001xR71mUAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Field_Map__mdt.object",
+          "fullName": "Integration_Field_Map__mdt.Array_Object_Type__c",
+          "id": "00NdL00001xR71nUAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Field_Map__mdt.object",
+          "fullName": "Integration_Field_Map__mdt.Child_Relationship_Name__c",
+          "id": "00NdL00001xR71oUAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Field_Map__mdt.object",
+          "fullName": "Integration_Field_Map__mdt.Data_Type__c",
+          "id": "00NdL00001xR71pUAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Field_Map__mdt.object",
+          "fullName": "Integration_Field_Map__mdt.Default_Value__c",
+          "id": "00NdL00001xR71qUAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Field_Map__mdt.object",
+          "fullName": "Integration_Field_Map__mdt.Direction__c",
+          "id": "00NdL00001xR71rUAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Field_Map__mdt.object",
+          "fullName": "Integration_Field_Map__mdt.Integration_Config__c",
+          "id": "00NdL00001xR71sUAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Field_Map__mdt.object",
+          "fullName": "Integration_Field_Map__mdt.Is_Array__c",
+          "id": "00NdL00001xR71tUAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Field_Map__mdt.object",
+          "fullName": "Integration_Field_Map__mdt.Is_Required__c",
+          "id": "00NdL00001xR71uUAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Field_Map__mdt.object",
+          "fullName": "Integration_Field_Map__mdt.Sort_Order__c",
+          "id": "00NdL00001xR71vUAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Field_Map__mdt.object",
+          "fullName": "Integration_Field_Map__mdt.Source_Field__c",
+          "id": "00NdL00001xR71wUAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Field_Map__mdt.object",
+          "fullName": "Integration_Field_Map__mdt.Target_Field__c",
+          "id": "00NdL00001xR71xUAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Field_Map__mdt.object",
+          "fullName": "Integration_Field_Map__mdt.Transform_Rule__c",
+          "id": "00NdL00001xR71yUAC",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Log__c.object",
+          "fullName": "Integration_Log__c.Direction__c",
+          "id": "00NdL00001xR71zUAC",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Log__c.object",
+          "fullName": "Integration_Log__c.Error_Message__c",
+          "id": "00NdL00001xR720UAC",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Log__c.object",
+          "fullName": "Integration_Log__c.Execution_Time_Ms__c",
+          "id": "00NdL00001xR721UAC",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Log__c.object",
+          "fullName": "Integration_Log__c.HTTP_Status_Code__c",
+          "id": "00NdL00001xR722UAC",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Log__c.object",
+          "fullName": "Integration_Log__c.Integration_Config__c",
+          "id": "00NdL00001xR723UAC",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Log__c.object",
+          "fullName": "Integration_Log__c.Record_Id__c",
+          "id": "00NdL00001xR724UAC",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Log__c.object",
+          "fullName": "Integration_Log__c.Request_Payload__c",
+          "id": "00NdL00001xR725UAC",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Log__c.object",
+          "fullName": "Integration_Log__c.Response_Payload__c",
+          "id": "00NdL00001xR726UAC",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Log__c.object",
+          "fullName": "Integration_Log__c.Retry_Count__c",
+          "id": "00NdL00001xR727UAC",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Log__c.object",
+          "fullName": "Integration_Log__c.Status__c",
+          "id": "00NdL00001xR728UAC",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Log__c.object",
+          "fullName": "Integration_Log__c.Timestamp__c",
+          "id": "00NdL00001xR729UAC",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Queue__c.object",
+          "fullName": "Integration_Queue__c.Error_Message__c",
+          "id": "00NdL00001xR72AUAS",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Queue__c.object",
+          "fullName": "Integration_Queue__c.Integration_Config__c",
+          "id": "00NdL00001xR72BUAS",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Queue__c.object",
+          "fullName": "Integration_Queue__c.Next_Retry_At__c",
+          "id": "00NdL00001xR72CUAS",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Queue__c.object",
+          "fullName": "Integration_Queue__c.Payload__c",
+          "id": "00NdL00001xR72DUAS",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Queue__c.object",
+          "fullName": "Integration_Queue__c.Priority__c",
+          "id": "00NdL00001xR72EUAS",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Queue__c.object",
+          "fullName": "Integration_Queue__c.Record_Id__c",
+          "id": "00NdL00001xR72FUAS",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Queue__c.object",
+          "fullName": "Integration_Queue__c.Retry_Count__c",
+          "id": "00NdL00001xR72GUAS",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Queue__c.object",
+          "fullName": "Integration_Queue__c.Status__c",
+          "id": "00NdL00001xR72HUAS",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Transform__mdt.object",
+          "fullName": "Integration_Transform__mdt.Apex_Class__c",
+          "id": "00NdL00001xR72IUAS",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Transform__mdt.object",
+          "fullName": "Integration_Transform__mdt.Parameters__c",
+          "id": "00NdL00001xR72JUAS",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomField",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:19.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Transform__mdt.object",
+          "fullName": "Integration_Transform__mdt.Transform_Type__c",
+          "id": "00NdL00001xR72KUAS",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:21.000Z",
+          "deleted": false,
+          "fileName": "classes/AuthenticationManager.cls",
+          "fullName": "AuthenticationManager",
+          "id": "01pdL00000Se6eTQAR",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:21.000Z",
+          "deleted": false,
+          "fileName": "classes/ErrorHandler.cls",
+          "fullName": "ErrorHandler",
+          "id": "01pdL00000Se6eUQAR",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:21.000Z",
+          "deleted": false,
+          "fileName": "classes/IntegrationConfigProvider.cls",
+          "fullName": "IntegrationConfigProvider",
+          "id": "01pdL00000SdtFpQAJ",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:21.000Z",
+          "deleted": false,
+          "fileName": "classes/IntegrationContext.cls",
+          "fullName": "IntegrationContext",
+          "id": "01pdL00000SdtFqQAJ",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:21.000Z",
+          "deleted": false,
+          "fileName": "classes/IntegrationException.cls",
+          "fullName": "IntegrationException",
+          "id": "01pdL00000SdtFrQAJ",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:21.000Z",
+          "deleted": false,
+          "fileName": "classes/IntegrationLogPurgeBatch.cls",
+          "fullName": "IntegrationLogPurgeBatch",
+          "id": "01pdL00000Se6eVQAR",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:21.000Z",
+          "deleted": false,
+          "fileName": "classes/IntegrationLogger.cls",
+          "fullName": "IntegrationLogger",
+          "id": "01pdL00000Se6eWQAR",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:21.000Z",
+          "deleted": false,
+          "fileName": "classes/IntegrationQueryBuilder.cls",
+          "fullName": "IntegrationQueryBuilder",
+          "id": "01pdL00000Se6eXQAR",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:21.000Z",
+          "deleted": false,
+          "fileName": "classes/IntegrationQueueable.cls",
+          "fullName": "IntegrationQueueable",
+          "id": "01pdL00000Se6eYQAR",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:21.000Z",
+          "deleted": false,
+          "fileName": "classes/IntegrationResult.cls",
+          "fullName": "IntegrationResult",
+          "id": "01pdL00000SdtFsQAJ",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:21.000Z",
+          "deleted": false,
+          "fileName": "classes/IntegrationSecrets.cls",
+          "fullName": "IntegrationSecrets",
+          "id": "01pdL00000Se6eZQAR",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:21.000Z",
+          "deleted": false,
+          "fileName": "classes/PayloadTransformer.cls",
+          "fullName": "PayloadTransformer",
+          "id": "01pdL00000Se6eaQAB",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:21.000Z",
+          "deleted": false,
+          "fileName": "classes/RequestBuilder.cls",
+          "fullName": "RequestBuilder",
+          "id": "01pdL00000Se6ebQAB",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:21.000Z",
+          "deleted": false,
+          "fileName": "classes/ResponseParser.cls",
+          "fullName": "ResponseParser",
+          "id": "01pdL00000Se6ecQAB",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:21.000Z",
+          "deleted": false,
+          "fileName": "classes/RetryManager.cls",
+          "fullName": "RetryManager",
+          "id": "01pdL00000Se6edQAB",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:21.000Z",
+          "deleted": false,
+          "fileName": "classes/UIF_AdminUIController.cls",
+          "fullName": "UIF_AdminUIController",
+          "id": "01pdL00000SduobQAB",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:21.000Z",
+          "deleted": false,
+          "fileName": "classes/WebhookAuthenticator.cls",
+          "fullName": "WebhookAuthenticator",
+          "id": "01pdL00000Se6eeQAB",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "ApexClass",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:21.000Z",
+          "deleted": false,
+          "fileName": "classes/core_IntegrationService.cls",
+          "fullName": "core_IntegrationService",
+          "id": "01pdL00000Se6efQAB",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "LightningComponentBundle",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:23.000Z",
+          "deleted": false,
+          "fileName": "lwc/fieldMapper",
+          "fullName": "fieldMapper",
+          "id": "0RbdL000005W448SAC",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "LightningComponentBundle",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:23.000Z",
+          "deleted": false,
+          "fileName": "lwc/integrationConfigurator",
+          "fullName": "integrationConfigurator",
+          "id": "0RbdL000005W449SAC",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomObject",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:23.000Z",
+          "deleted": false,
+          "fileName": "objects/GL_Account__c.object",
+          "fullName": "GL_Account__c",
+          "id": "01IdL00000DhTP3UAN",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomObject",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:23.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Auth__mdt.object",
+          "fullName": "Integration_Auth__mdt",
+          "id": "01IdL00000DdLDBUA3",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomObject",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:23.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Config__mdt.object",
+          "fullName": "Integration_Config__mdt",
+          "id": "01IdL00000DdLDCUA3",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomObject",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:23.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Endpoint__mdt.object",
+          "fullName": "Integration_Endpoint__mdt",
+          "id": "01IdL00000DdLDDUA3",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomObject",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:23.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Event__e.object",
+          "fullName": "Integration_Event__e",
+          "id": "01IdL00000DdLDEUA3",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomObject",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:23.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Field_Map__mdt.object",
+          "fullName": "Integration_Field_Map__mdt",
+          "id": "01IdL00000DdLDFUA3",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomObject",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:23.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Log__c.object",
+          "fullName": "Integration_Log__c",
+          "id": "01IdL00000DdLDGUA3",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "CustomObject",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:23.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Queue__c.object",
+          "fullName": "Integration_Queue__c",
+          "id": "01IdL00000DdLDHUA3",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "CustomObject",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:23.000Z",
+          "deleted": false,
+          "fileName": "objects/Integration_Transform__mdt.object",
+          "fullName": "Integration_Transform__mdt",
+          "id": "01IdL00000DdLDIUA3",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "PermissionSet",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:23.000Z",
+          "deleted": false,
+          "fileName": "permissionsets/Quickbook.permissionset",
+          "fullName": "Quickbook",
+          "id": "0PSdL00000TyNnRWAV",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "PermissionSet",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:23.000Z",
+          "deleted": false,
+          "fileName": "permissionsets/Universal_Integration_Admin.permissionset",
+          "fullName": "Universal_Integration_Admin",
+          "id": "0PSdL00000TlKnNWAV",
+          "success": true
+        },
+        {
+          "changed": false,
+          "componentType": "RemoteSiteSetting",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:23.000Z",
+          "deleted": false,
+          "fileName": "remoteSiteSettings/ReqRes.remoteSite",
+          "fullName": "ReqRes",
+          "id": "0rpdL000007hlVtQAI",
+          "success": true
+        },
+        {
+          "changed": true,
+          "componentType": "",
+          "created": false,
+          "createdDate": "2026-03-15T08:25:23.000Z",
+          "deleted": false,
+          "fileName": "package.xml",
+          "fullName": "package.xml",
+          "success": true
+        }
+      ],
+      "runTestResult": {
+        "numFailures": 0,
+        "numTestsRun": 0,
+        "totalTime": 0,
+        "codeCoverage": [],
+        "codeCoverageWarnings": [],
+        "failures": [],
+        "flowCoverage": [],
+        "flowCoverageWarnings": [],
+        "successes": []
+      },
+      "componentFailures": []
+    },
+    "done": true,
+    "id": "0AfdL00000XSySrSAL",
+    "ignoreWarnings": false,
+    "lastModifiedDate": "2026-03-15T08:25:24.000Z",
+    "numberComponentErrors": 0,
+    "numberComponentsDeployed": 103,
+    "numberComponentsTotal": 103,
+    "numberFiles": "64",
+    "numberTestErrors": 0,
+    "numberTestsCompleted": 0,
+    "numberTestsTotal": 0,
+    "rollbackOnError": true,
+    "runTestsEnabled": false,
+    "startDate": "2026-03-15T08:25:14.000Z",
+    "status": "Succeeded",
+    "success": true,
+    "zipSize": 52214,
+    "files": [
+      {
+        "fullName": "UIF_AdminUIController",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/admin/UIF_AdminUIController.cls"
+      },
+      {
+        "fullName": "UIF_AdminUIController",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/admin/UIF_AdminUIController.cls-meta.xml"
+      },
+      {
+        "fullName": "AuthenticationManager",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/auth/AuthenticationManager.cls"
+      },
+      {
+        "fullName": "AuthenticationManager",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/auth/AuthenticationManager.cls-meta.xml"
+      },
+      {
+        "fullName": "IntegrationSecrets",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/auth/IntegrationSecrets.cls"
+      },
+      {
+        "fullName": "IntegrationSecrets",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/auth/IntegrationSecrets.cls-meta.xml"
+      },
+      {
+        "fullName": "WebhookAuthenticator",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/auth/WebhookAuthenticator.cls"
+      },
+      {
+        "fullName": "WebhookAuthenticator",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/auth/WebhookAuthenticator.cls-meta.xml"
+      },
+      {
+        "fullName": "IntegrationConfigProvider",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/core/IntegrationConfigProvider.cls"
+      },
+      {
+        "fullName": "IntegrationConfigProvider",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/core/IntegrationConfigProvider.cls-meta.xml"
+      },
+      {
+        "fullName": "IntegrationContext",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/core/IntegrationContext.cls"
+      },
+      {
+        "fullName": "IntegrationContext",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/core/IntegrationContext.cls-meta.xml"
+      },
+      {
+        "fullName": "IntegrationException",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/core/IntegrationException.cls"
+      },
+      {
+        "fullName": "IntegrationException",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/core/IntegrationException.cls-meta.xml"
+      },
+      {
+        "fullName": "IntegrationQueryBuilder",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/core/IntegrationQueryBuilder.cls"
+      },
+      {
+        "fullName": "IntegrationQueryBuilder",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/core/IntegrationQueryBuilder.cls-meta.xml"
+      },
+      {
+        "fullName": "IntegrationResult",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/core/IntegrationResult.cls"
+      },
+      {
+        "fullName": "IntegrationResult",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/core/IntegrationResult.cls-meta.xml"
+      },
+      {
+        "fullName": "IntegrationContext",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/engine/IntegrationContext.cls"
+      },
+      {
+        "fullName": "IntegrationContext",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/engine/IntegrationContext.cls-meta.xml"
+      },
+      {
+        "fullName": "IntegrationException",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/engine/IntegrationException.cls"
+      },
+      {
+        "fullName": "IntegrationException",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/engine/IntegrationException.cls-meta.xml"
+      },
+      {
+        "fullName": "IntegrationResult",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/engine/IntegrationResult.cls"
+      },
+      {
+        "fullName": "IntegrationResult",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/engine/IntegrationResult.cls-meta.xml"
+      },
+      {
+        "fullName": "PayloadTransformer",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/engine/PayloadTransformer.cls"
+      },
+      {
+        "fullName": "PayloadTransformer",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/engine/PayloadTransformer.cls-meta.xml"
+      },
+      {
+        "fullName": "RequestBuilder",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/engine/RequestBuilder.cls"
+      },
+      {
+        "fullName": "RequestBuilder",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/engine/RequestBuilder.cls-meta.xml"
+      },
+      {
+        "fullName": "ResponseParser",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/engine/ResponseParser.cls"
+      },
+      {
+        "fullName": "ResponseParser",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/engine/ResponseParser.cls-meta.xml"
+      },
+      {
+        "fullName": "core_IntegrationService",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/engine/core_IntegrationService.cls"
+      },
+      {
+        "fullName": "core_IntegrationService",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/engine/core_IntegrationService.cls-meta.xml"
+      },
+      {
+        "fullName": "ErrorHandler",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/error/ErrorHandler.cls"
+      },
+      {
+        "fullName": "ErrorHandler",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/error/ErrorHandler.cls-meta.xml"
+      },
+      {
+        "fullName": "RetryManager",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/error/RetryManager.cls"
+      },
+      {
+        "fullName": "RetryManager",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/error/RetryManager.cls-meta.xml"
+      },
+      {
+        "fullName": "IntegrationQueueable",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/execution/IntegrationQueueable.cls"
+      },
+      {
+        "fullName": "IntegrationQueueable",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/execution/IntegrationQueueable.cls-meta.xml"
+      },
+      {
+        "fullName": "IntegrationLogPurgeBatch",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/logging/IntegrationLogPurgeBatch.cls"
+      },
+      {
+        "fullName": "IntegrationLogPurgeBatch",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/logging/IntegrationLogPurgeBatch.cls-meta.xml"
+      },
+      {
+        "fullName": "IntegrationLogger",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/logging/IntegrationLogger.cls"
+      },
+      {
+        "fullName": "IntegrationLogger",
+        "type": "ApexClass",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/classes/logging/IntegrationLogger.cls-meta.xml"
+      },
+      {
+        "fullName": "GL_Account__c.Account_SubType__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/GL_Account__c/fields/Account_SubType__c.field-meta.xml"
+      },
+      {
+        "fullName": "GL_Account__c.Account_Type__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/GL_Account__c/fields/Account_Type__c.field-meta.xml"
+      },
+      {
+        "fullName": "GL_Account__c.Is_Available_For_QB_Sync__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/GL_Account__c/fields/Is_Available_For_QB_Sync__c.field-meta.xml"
+      },
+      {
+        "fullName": "GL_Account__c.QBO_SyncToken__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/GL_Account__c/fields/QBO_SyncToken__c.field-meta.xml"
+      },
+      {
+        "fullName": "GL_Account__c.QB_Error_Message__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/GL_Account__c/fields/QB_Error_Message__c.field-meta.xml"
+      },
+      {
+        "fullName": "GL_Account__c.QB_Id__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/GL_Account__c/fields/QB_Id__c.field-meta.xml"
+      },
+      {
+        "fullName": "GL_Account__c.QB_Sync_Status__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/GL_Account__c/fields/QB_Sync_Status__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Auth__mdt.Auth_Header_Name__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Auth__mdt/fields/Auth_Header_Name__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Auth__mdt.Auth_Type__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Auth__mdt/fields/Auth_Type__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Auth__mdt.Client_Id_Field__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Auth__mdt/fields/Client_Id_Field__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Auth__mdt.Client_Secret_Field__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Auth__mdt/fields/Client_Secret_Field__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Auth__mdt.Named_Credential__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Auth__mdt/fields/Named_Credential__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Auth__mdt.Scope__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Auth__mdt/fields/Scope__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Auth__mdt.Token_Cache_Seconds__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Auth__mdt/fields/Token_Cache_Seconds__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Auth__mdt.Token_Endpoint__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Auth__mdt/fields/Token_Endpoint__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Config__mdt.Auth_Config__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Config__mdt/fields/Auth_Config__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Config__mdt.Batch_Size__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Config__mdt/fields/Batch_Size__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Config__mdt.Description__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Config__mdt/fields/Description__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Config__mdt.Direction__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Config__mdt/fields/Direction__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Config__mdt.Endpoint__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Config__mdt/fields/Endpoint__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Config__mdt.Execution_Type__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Config__mdt/fields/Execution_Type__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Config__mdt.External_System__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Config__mdt/fields/External_System__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Config__mdt.Is_Active__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Config__mdt/fields/Is_Active__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Config__mdt.Max_Retries__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Config__mdt/fields/Max_Retries__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Config__mdt.Retry_Interval_Seconds__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Config__mdt/fields/Retry_Interval_Seconds__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Config__mdt.Source_Object__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Config__mdt/fields/Source_Object__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Config__mdt.Timeout__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Config__mdt/fields/Timeout__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Endpoint__mdt.Base_URL__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Endpoint__mdt/fields/Base_URL__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Endpoint__mdt.Content_Type__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Endpoint__mdt/fields/Content_Type__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Endpoint__mdt.Custom_Headers__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Endpoint__mdt/fields/Custom_Headers__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Endpoint__mdt.HTTP_Method__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Endpoint__mdt/fields/HTTP_Method__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Endpoint__mdt.Named_Credential__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Endpoint__mdt/fields/Named_Credential__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Endpoint__mdt.Path__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Endpoint__mdt/fields/Path__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Endpoint__mdt.Query_Parameters__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Endpoint__mdt/fields/Query_Parameters__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Field_Map__mdt.Array_Object_Type__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Field_Map__mdt/fields/Array_Object_Type__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Field_Map__mdt.Child_Relationship_Name__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Field_Map__mdt/fields/Child_Relationship_Name__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Field_Map__mdt.Data_Type__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Field_Map__mdt/fields/Data_Type__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Field_Map__mdt.Default_Value__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Field_Map__mdt/fields/Default_Value__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Field_Map__mdt.Direction__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Field_Map__mdt/fields/Direction__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Field_Map__mdt.Integration_Config__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Field_Map__mdt/fields/Integration_Config__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Field_Map__mdt.Is_Array__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Field_Map__mdt/fields/Is_Array__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Field_Map__mdt.Is_Required__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Field_Map__mdt/fields/Is_Required__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Field_Map__mdt.Sort_Order__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Field_Map__mdt/fields/Sort_Order__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Field_Map__mdt.Source_Field__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Field_Map__mdt/fields/Source_Field__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Field_Map__mdt.Target_Field__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Field_Map__mdt/fields/Target_Field__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Field_Map__mdt.Transform_Rule__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Field_Map__mdt/fields/Transform_Rule__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Log__c.Direction__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Log__c/fields/Direction__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Log__c.Error_Message__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Log__c/fields/Error_Message__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Log__c.Execution_Time_Ms__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Log__c/fields/Execution_Time_Ms__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Log__c.HTTP_Status_Code__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Log__c/fields/HTTP_Status_Code__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Log__c.Integration_Config__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Log__c/fields/Integration_Config__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Log__c.Record_Id__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Log__c/fields/Record_Id__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Log__c.Request_Payload__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Log__c/fields/Request_Payload__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Log__c.Response_Payload__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Log__c/fields/Response_Payload__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Log__c.Retry_Count__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Log__c/fields/Retry_Count__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Log__c.Status__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Log__c/fields/Status__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Log__c.Timestamp__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Log__c/fields/Timestamp__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Queue__c.Error_Message__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Queue__c/fields/Error_Message__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Queue__c.Integration_Config__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Queue__c/fields/Integration_Config__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Queue__c.Next_Retry_At__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Queue__c/fields/Next_Retry_At__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Queue__c.Payload__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Queue__c/fields/Payload__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Queue__c.Priority__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Queue__c/fields/Priority__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Queue__c.Record_Id__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Queue__c/fields/Record_Id__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Queue__c.Retry_Count__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Queue__c/fields/Retry_Count__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Queue__c.Status__c",
+        "type": "CustomField",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Queue__c/fields/Status__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Transform__mdt.Apex_Class__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Transform__mdt/fields/Apex_Class__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Transform__mdt.Parameters__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Transform__mdt/fields/Parameters__c.field-meta.xml"
+      },
+      {
+        "fullName": "Integration_Transform__mdt.Transform_Type__c",
+        "type": "CustomField",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Transform__mdt/fields/Transform_Type__c.field-meta.xml"
+      },
+      {
+        "fullName": "GL_Account__c",
+        "type": "CustomObject",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/GL_Account__c/GL_Account__c.object-meta.xml"
+      },
+      {
+        "fullName": "Integration_Auth__mdt",
+        "type": "CustomObject",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Auth__mdt/Integration_Auth__mdt.object-meta.xml"
+      },
+      {
+        "fullName": "Integration_Config__mdt",
+        "type": "CustomObject",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Config__mdt/Integration_Config__mdt.object-meta.xml"
+      },
+      {
+        "fullName": "Integration_Endpoint__mdt",
+        "type": "CustomObject",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Endpoint__mdt/Integration_Endpoint__mdt.object-meta.xml"
+      },
+      {
+        "fullName": "Integration_Event__e",
+        "type": "CustomObject",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Event__e/Integration_Event__e.object-meta.xml"
+      },
+      {
+        "fullName": "Integration_Field_Map__mdt",
+        "type": "CustomObject",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Field_Map__mdt/Integration_Field_Map__mdt.object-meta.xml"
+      },
+      {
+        "fullName": "Integration_Log__c",
+        "type": "CustomObject",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Log__c/Integration_Log__c.object-meta.xml"
+      },
+      {
+        "fullName": "Integration_Queue__c",
+        "type": "CustomObject",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Queue__c/Integration_Queue__c.object-meta.xml"
+      },
+      {
+        "fullName": "Integration_Transform__mdt",
+        "type": "CustomObject",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/objects/Integration_Transform__mdt/Integration_Transform__mdt.object-meta.xml"
+      },
+      {
+        "fullName": "fieldMapper",
+        "type": "LightningComponentBundle",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/lwc/fieldMapper/fieldMapper.css"
+      },
+      {
+        "fullName": "fieldMapper",
+        "type": "LightningComponentBundle",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/lwc/fieldMapper/fieldMapper.html"
+      },
+      {
+        "fullName": "fieldMapper",
+        "type": "LightningComponentBundle",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/lwc/fieldMapper/fieldMapper.js"
+      },
+      {
+        "fullName": "fieldMapper",
+        "type": "LightningComponentBundle",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/lwc/fieldMapper/fieldMapper.js-meta.xml"
+      },
+      {
+        "fullName": "integrationConfigurator",
+        "type": "LightningComponentBundle",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/lwc/integrationConfigurator/integrationConfigurator.css"
+      },
+      {
+        "fullName": "integrationConfigurator",
+        "type": "LightningComponentBundle",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/lwc/integrationConfigurator/integrationConfigurator.html"
+      },
+      {
+        "fullName": "integrationConfigurator",
+        "type": "LightningComponentBundle",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/lwc/integrationConfigurator/integrationConfigurator.js"
+      },
+      {
+        "fullName": "integrationConfigurator",
+        "type": "LightningComponentBundle",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/lwc/integrationConfigurator/integrationConfigurator.js-meta.xml"
+      },
+      {
+        "fullName": "Quickbook",
+        "type": "PermissionSet",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/permissionsets/Quickbook.permissionset-meta.xml"
+      },
+      {
+        "fullName": "Universal_Integration_Admin",
+        "type": "PermissionSet",
+        "state": "Changed",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/permissionsets/Universal_Integration_Admin.permissionset-meta.xml"
+      },
+      {
+        "fullName": "ReqRes",
+        "type": "RemoteSiteSetting",
+        "state": "Unchanged",
+        "filePath": "/Users/metadologie/Desktop/Salesforce/Universal Integration Framework/force-app/main/default/remoteSiteSettings/ReqRes.remoteSite-meta.xml"
+      }
+    ],
+    "zipFileCount": 63,
+    "deployUrl": "https://orgfarm-048b07497c-dev-ed.develop.my.salesforce.com/lightning/setup/DeployStatus/page?address=%2Fchangemgmt%2FmonitorDeploymentsDetails.apexp%3FasyncId%3D0AfdL00000XSySrSAL%26retURL%3D%252Fchangemgmt%252FmonitorDeployment.apexp"
+  },
+  "warnings": [
+    "CustomField, Integration_Event__e.Action__c, returned from org, but not found in the local project",
+    "CustomField, Integration_Event__e.Config_Name__c, returned from org, but not found in the local project",
+    "CustomField, Integration_Event__e.Record_Id__c, returned from org, but not found in the local project"
+  ]
+}

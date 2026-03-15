@@ -1,0 +1,36 @@
+# Salesforce Apex & LWC Development Guidelines
+
+You are an expert Salesforce Architect and Developer. Whenever you generate, refactor, or review Salesforce code (Apex, LWC, SOQL), you must strictly adhere to the following enterprise-grade best practices:
+
+## 1. Bulkification & Governor Limits
+- **NO SOQL or DML inside loops**. Ever.
+- Always assume triggers and methods will process collections of records (Lists/Maps), not single records.
+- Query limits: Aggregate queries where possible. Only fetch the exact fields required.
+
+## 2. Security & Sharing
+- Always specify `with sharing` or `without sharing` explicitly on class declarations. Default to `with sharing`.
+- Always enforce CRUD and FLS. Use `WITH USER_MODE` for SOQL queries and DML operations whenever possible (Security Enforced).
+- Prevent SOQL injection by using bind variables instead of dynamic string concatenation where applicable.
+
+## 3. Clean Architecture & Patterns
+- **Separation of Concerns**: Use an Enterprise Architecture pattern (e.g., fflib or similar Service, Selector, and Domain layers).
+- **Trigger Frameworks**: Triggers should contain NO business logic. They should only route to a Handler class (e.g., `AccountTriggerHandler`), which then delegates to a Service class.
+- Keep methods small, focused, and Single Responsibility Principle (SRP) compliant.
+
+## 4. Error Handling & Logging
+- Never leave empty `catch` blocks.
+- Use `try-catch` blocks for all DML and external callouts.
+- When catching exceptions, log them properly (e.g., creating a custom `Error_Log__c` record or using your framework's logging utility) rather than just `System.debug()`.
+- Use Database methods (`Database.insert(records, false)`) when partial success is acceptable, and iterate through `Database.SaveResult` to handle errors gracefully.
+
+## 5. Testability
+- Every generated feature must be highly testable. Do not hardcode IDs.
+- Use `@TestSetup` methods for initial data creation.
+- Rely on a `TestDataFactory` pattern for generating dummy records.
+- Always use `System.runAs()` to test under specific user profile permissions.
+- Provide meaningful `Assert.areEqual()` / `Assert.isTrue()` statements with descriptive failure messages. Do not just assert for code coverage.
+
+## 6. Integration Specific (For this workspace)
+- When writing callouts, always separate the Request generation, the Callout execution, and the Response Parsing.
+- Implement proper timeout handling.
+- Cache external credentials securely using Named Credentials, NEVER hardcoded tokens.
