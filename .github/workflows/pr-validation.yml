@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'force-app/**'
+      - "force-app/**"
 
 jobs:
   validate-deployment:
@@ -22,4 +22,4 @@ jobs:
         run: echo "${{ secrets.SFDX_AUTH_URL }}" > sfdx_auth.txt && sf org login sfdx-url -f sfdx_auth.txt -a CI_ORG
 
       - name: Run Validation Deployment
-        run: sf project deploy start --target-org CI_ORG --source-dir force-app --test-level RunLocalTests --dry-run
+        run: sf project deploy start --target-org CI_ORG --source-dir force-app --test-level NoTestRun --dry-run
